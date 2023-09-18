@@ -1,0 +1,56 @@
+.item {
+  width: 700px;
+  margin: 100px auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.text,
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  color: #868e96;
+}
+
+.open .item {
+  border-top: 4px solid green;
+}
+
+.open .number,
+.open .text {
+  color: #008000;
+}
+
+.open .icon {
+  filter: invert(20%) sepia(89%) saturate(4143%) hue-rotate(113deg) brightness(94%) contrast(101%);
+}
+
+.open .content {
+  display: block;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(67%) sepia(3%) saturate(1620%) hue-rotate(109deg) brightness(91%) contrast(86%);
+}
+
+.content {
+  grid-column: 2;
+  display: none;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.content ul {
+  color: gray;
+  gap: 10px;
+}

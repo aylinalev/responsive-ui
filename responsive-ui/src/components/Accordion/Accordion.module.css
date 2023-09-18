@@ -1,0 +1,45 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid salmon;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.header {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: chartreuse;
+  background-color: blanchedalmond;
+}
+
+.content ul {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
